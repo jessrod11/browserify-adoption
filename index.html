@@ -4,15 +4,31 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Browserify||Adoption</title>
-    <link rel= "shortcut icon" href= "">
+    <link rel= "shortcut icon" href= "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOIAAADfCAMAAADcKv+WAAAAflBMVEX///8AAAD8/PwEBAT5+fnn5+eHh4f29vbs7OzGxsZ/f39xcXGQkJDW1tbb29vj4+PNzc2mpqa5ubmenp5paWnx8fFJSUlSUlKxsbHY2Ng4ODi/v78eHh6BgYGWlpZ4eHhfX18tLS0VFRVVVVVAQEAyMjIlJSUPDw83NzdMTEzyImILAAAMzklEQVR4nO1diXbjqBIVIMtrvMaOE+/pdJL+/x98QrIdlgIKJCRnnu6ZM53EAnNZi9qUJB06dOjQoUOHDh06dOjQoUOHDh06dPg9oDT/X386HRQ/U59SSW/6Gq1dtWKakQKnrVexxZgXYl+TdaR21YZlQY+x4p9JPjiogRxMhGIf09iNrIL1B5GwXyY0dRc7yqXIuI/rmRYw+7yN331QVoi2jolUjDBy7sVvbABoMvsiOl5cu87gAyhFBkn6gAM520NtLThaSlGQISEz9HbcHNYwQ0b+WRfWB2FgOfJwy5EmY7ilOU6WUm/GUocGW4/D0thWQpbGUjtLqYc7OyxtJQQ+zilNL8YizLWIG8fCtKQKZODCosnJXCo/RiaNs7CAJoZ90T7pZvJ5qA7jV8Ms7LCtKY4XsNTJUcq8hlvAs72tjPSBQjPb3OZ4a5yHGamjrYQc1dWYbyVnRxmWyzgPs+EsnBTJWmtsat2hCsDbVCv4527tSiu0tG025Sg+t8AFxtrNkFyUMu55muPrYUZxgKBIZkqhvrsIIfNW+OigK3dbmTZTbRLfHcNWCAFATDlC/oQUMkvwjcIp2nCwnKK8ruC712NSdIjgd8jHBmr95rfGhwBFUtxJpWa/iWI+ICiMhSI0meAKtUZKhksGBym+YIqwRzk1hjiK4oigDn6Op9ZYSQih6BbcfyVFUb75j1IU19X8v08RJb79Nory7ojchX8bxUwoY1Ys/2KKJIjioDVWMiJSbI2Tgl9PsVS7l8peWM/QKMW0bETa+2lbDRy3pZp0swA9KmjyGY3iB/R1yXCy4R9eTrVIsDTpnfithxX/kTNI0qEorkBxBHzbjl+mGSva8324sq7CUFWRZpqrAXUq7gsEHRr6rf9Vld+HFSmmI6WdDLI0bHEURQUVkuJO/aoV0a7SywoUKaXg+Gh1IvTaHOIxjjxLVcMkuCRW4bsOTTKg7flAjpUHMapiQkIEOKUz/0DPMLIIH0fjBNwqdSJUcEQ2MmLEcEbexO+xuBME28z7Zj2gMlcRumIin3EYXTjLN9Sfr6GWbtmHOs69mOZf/mfZvQmloJKtGqiBn2O/JMhmTpOp7cs/ZOc2jN5XVU8h1u/PV+QbivX5MEuk7UBnynI8ICiupFm3QlA8i31ic5hg5DOEonXyMcXS1HPaCplynmK04WKJvn4gSs0JMfBkju8XvZu4F5STouK2iRBsxQXvEhJDrK2u798LLaaIPVU1am+cJcZCiSfHs4wg/F4lUMTZ/Cz6U7rmHdNUFA7/AL4U6E9zXB3C6/cjSZ3m+3zmSSVc2m3NwcR50AjWOup8WBbycRRddRL5cuRUjJ6177D7lMmbDcIlxNu7s4eoUx5Gx41Kc4XOe9G6C2+EZ9eQv7IKX1kcpa2WNmp7p0y0PqbJyDqM4uUbdVvzPTZQUqcsNlknE7QVWHZJlp9JQp+g7ty+90aMuEL2UhFqefLo249f4h2Q2o79OyAliA0XBEOWX2LEjpvCi4sxgyMj34bBpqtiPu7+7LulYupU7qI0X8AgRfLWB6cQTWamiueSPIszmv+LQJHIzvuUQpoV/ocpvEoo7xStAP99K03T5IJrjR/DV5yqgsjDQ4Gtj9nu5BSYg0yz1axxDD0pTpEUZQ1ZLmgP37VnZuadLh8r4KzpKQVQR0YARRx0hWPKbyiM8Y2n2HzgvVQE31fLDi0KTLTzBWtujUNR8zLNJfPZ6X5P+lqsXYdVXmAgKGtXqa4xdF3rwihip/9ZK1naeLYTDr4IXWJVGTT2uuDPb2f3GkTg9HveVixkrY0YxyK1BVcpeySK5yjVMtJAgPMQubv7Sje4Jc6acPvFuuj4Uhy5q2yKImRYgeArhuOOW1VzGAW43va/L2JnRwOezah7XUSKvrPDGxS2uAFQoyScFT8ORWRLfNVTFOuiEJ0i8vzS7bouPA5F5Cj6x1fpnhrtUUR1NtM9H5xA3RgZhuJVEO8VWC5KrKa93uz2sX0RoXZUFuIQiKkYd2j055Pj+AIU3m+OW37Dt1PEnYtqZB0GKN2l9TAqhm84Ae9C4hRZpYnt0mUJGxcQYgrHyTf28/ZphdHU5zhYUqMsURRDJEncrdjm9bvmh7bDelw8wR/ZGGvC3TSCEqsg4mGM90U+7bCy5Q0LQKdRAENx7Hnwl8DM1L2hbKlZw90Q7vgewu3ElDUUdQHRQsN5WypUPRmSQtsFtBRzMAb6Fk3cjVwYGfrzK0QUaNtB6PvdqkwYCO89w3n7HMSw2JoAjk6NZwUVknOGQIucpmj1NQhVF57/+tdVJjz+32kNh7wkQ2dpCcBJCLKUKHgN90c9WBvL4Fsoyk3ABtUV1GqcRQrKRooOl8oNWCx8CMsWc/86BQ59oK9XkUARso2JAAUSjP+eg6K251gmhm6r88XYKIExyTVRYFgHVDnH7C3vSsLmhs1tCRK3Ki/Estmqc4Ct2sp5/8xTVdf1U1SiBhTU9GEGWdxqg0bDpG4EBBvuHFhxs7k3XT2P1OybN4YWGzQWpRaHaVWDgQM4BxkURc0H4g/k+PBVA0OOmdpwZhJO69lrruiJ3pcUUBkz8l5TBCdNUs0btMK1BwlGPsSv4MZkba4e68z3t/v55hyZwVMIOhKtE/d+IJX+Dwo0yaI3Fgtdao0zzmfMbFImwdzvl5qgfKVoWIkvx8nuOMk+wUCHv5fNcfJpkLP1K9Lr6uoq8bboJ55uxA4UE2LNFaHlr+BD6iDy7h4PBf/us9gH+U9vq5sY0+OfEW0o1S2nyNjNW7Eufmk89xYgLD8rcvpAvJ6N5BjSQabrsi6w81xr0Byh/2rCgehV35N0p/zHqe5f/jCJmRJAsGHkGVwqt6AVUHGaKeMouzS2DF2wyfL7P3RhLscR3A2BqKH9IyWeHoutK2IKDI0b2S6x8vnOwhVPEaAmsDE/OeNBG8YzW1uOj5OyeIJtGJfEjJGxwCU8xOQUAamaaOnb4oOabMGEsLdPNQkBvHk3Di3mwtKslPbfzRWlqp6GsceYqppB3p4ZwmoLVBTDvOceItmtqum0b/VT26eQW7q/Hb92aJGAjhdiWD9U6+LSQGZevY2gr17k/OMlBRgUYq2+YSP91C5R5v3EDUP8xGdL77zhd/H1RZtZxgAiDEA9FMfc45VHNSIFFXSVJqrZcLdt500poAoyyM/nBksWBM2eEx36OX1HuERiDf2eo154VCOoxVQeXKkrJ0SToIVp00RxFKL/y7cTVwaVRoWA1B4oG5Jmh7qT35q8YOLA5ltt1JdbwLvE7e+mph+PCUdKCO7m6zdXKUU5XL00t626U0KcPWvsb6I59AUAZ2Y741O0ccfbC4IfR0NvLhpiXBQ9NkDqzIXyU2uFhGEe6BOMJRHMiweBetjtWCNJU1OMe1zRHKRPDDoZfIkmdOTYaGoG5MUDMfYzLzeQ3hcZxFEC4aDmzmAkdRzPXxaZITaY+op3x232FXdYiByt2p864Od5wopke6Y2ge4SzhpPUYeRIl3uRexn5tssMqxHQWQ1By5wQsbI1O2u9EwGeEvAXkC+IUTBQZdJ+MBigxNV+Ma5+cHrCLshPzw0ozZNepdAhlUcNBEwv77UzvEi+x/kgxo2H8raYkbbh/sqniUvkrQCw8JEG29PxeYtAZolpczifRXsMMe8cxThQU35olAQ95yKnqvxBBzaf6/S98I4hi3pH8RzyUG9cM/M8ZogBx3Ia6EYi6GvfKrhalzFvoOjDYrBu80VVwuTM4CmNYqYXK8OjLjSflxhz4pM0fOqCGIXKgP+HooE/8IQGx6YIiPbOgbxsSl+4uLpfy/FmvAVz2Jc9dCoCxFNG49BURXpa0WlINraEFPr7zTjNgOeCT0aRdxbIqKjivOSkyLyJaaR4ZvXzgv+WtQYiGvVQOZ3iYu4Rg3fDCgxEHWe1nGbrQjGyCCqLdzyuqemKNYbuAgB+QZzuVlyhCIUrohHXcGnFoTeFN6+/6xWm++3t4ratwY84dY+St5yvL4X64HQ9+td9lJaKb1H09+fJwBFLhSPpr3shuDK6S9PYz2TuhtNuIlTDxPj+4TfXanu83z9y9zPzk9cMSD14Z/73Vk87P4Ej58E+nRE02TNRTTytyI5x/FjSxOMG3D+xGCH0yYwMqk3SNoMWjiSmEgWfx95vFW3CMbONsSRGY9FF2sU2NyBztuQeO2B09Axb2oMC5hTQn3ymHv/mApeIn3KLKaA515DTow/mJ7lqVX89Fz1njNYPP/UJlbdQAJvFZQH48tzdbwY4H1QDbXyPerpMFZG829DnrYQ5otDdiEf2eE4r3cSpXnFWXZhZJwdtq1Ghf2fgBbSS+07Ab1V3UY4WIcOHTp06NChQ4cOHTp06NChQ4cOdeB/bQGOogR3ZyYAAAAASUVORK5CYII=">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css" />
-   
 </head>
-<body>
+
+
+<body class="text-center">
    <h1>Pet Adoption</h1> 
+   <img src="http://www.slashfilm.com/wp/wp-content/images/secretlifeofpets-chloe-max-mel.jpg">
+
+  
+   <div id="button-container">
+    <button type="button" class="btn btn-primary btn-lg active">Dog</button>
+    <button type="button" class="btn btn-warning btn-lg active">Cat</button>
+    <button type="button" class="btn btn-success btn-lg active">Dino</button>
+   </div>
 
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <script src="./dist/app.js"></script>
 </body>
 </html>
