@@ -1,1 +1,3 @@
-console.log('Stix');
+const data = ('./data');
+
+data.initializer();
