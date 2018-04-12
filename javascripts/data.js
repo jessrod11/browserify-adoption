@@ -1,9 +1,11 @@
-const loadPets = ('./pets');
+const loadPets = require ('./pets');
+const printToDom = require('./dom');
 
 let petsArray = [];
 
 const whenPetsLoad = function () {
   petsArray = JSON.parse(this.responseText).pets;
+  printToDom(petsArray);
 };
 
 const badPets = function () {
