@@ -1,7 +1,14 @@
 body {
-    background-color: blueviolet;
+    background-color:lightseagreen;
+    font-family: 'Alfa Slab One', cursive;
 }
 
-h1 {
-    text-align: center;
+img {
+    width: 35%;
+    border: 4px solid white;
+    border-radius: 20%;
+}
+
+#button-container{
+    padding: 1%;
 }
