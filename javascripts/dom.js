@@ -1,3 +1,5 @@
+const domEvents = require('./events');
+
 const petOutputDiv = document.getElementById('pets');
 
 const petDom = (pets) => {
@@ -16,6 +18,7 @@ const petDom = (pets) => {
 
 const printToDom = (petArray) => {
   petOutputDiv.innerHTML = petDom(petArray);
+  domEvents();
 };
 
 module.exports = printToDom;

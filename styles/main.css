@@ -33,4 +33,25 @@ img {
     border-radius: 20%;
 }
 
+.pet-type {
+    border-top: 2px solid gray;
+}
+
+.dog {
+    background-color: #428bca;
+    
+}
+
+.cat {
+    background-color: goldenrod;
+
+}
+
+.dino {
+    background-color: #5cb85c;
+
+}
+
+
+
 
