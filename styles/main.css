@@ -12,3 +12,11 @@ img {
 #button-container{
     padding: 1%;
 }
+
+.pet-container{
+    border: 4px double goldenrod;
+    width:50%; 
+    margin:0 auto; 
+    text-align:center
+}
+
