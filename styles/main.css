@@ -9,14 +9,28 @@ img {
     border-radius: 20%;
 }
 
+
+#pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #button-container{
     padding: 1%;
 }
 
 .pet-container{
     border: 4px double goldenrod;
-    width:50%; 
-    margin:0 auto; 
-    text-align:center
+    margin: 1%;
+    padding: 1%;
+    width: 400px;
 }
+
+.pet-image{
+    width: 90%;
+    border: 4px solid white;
+    border-radius: 20%;
+}
+
 
