@@ -21,7 +21,6 @@ img {
 }
 
 .pet-container{
-    border: 4px double goldenrod;
     margin: 1%;
     padding: 1%;
     width: 400px;
@@ -39,7 +38,7 @@ img {
 
 .dog {
     background-color: #428bca;
-    
+
 }
 
 .cat {

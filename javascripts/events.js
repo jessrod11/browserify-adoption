@@ -1,28 +1,16 @@
-// const petDom = require('./dom');
-const petButtons = document.getElementsByClassName('pet-button');
-
-const showPets = (e) => {
-  const petType = e.target.innerHTML;
-  if (petType === 'Cat') {
-    console.log('you clicked the cat button', e);
-  } else if (petType === 'Dog') {
-    console.log('you clicked the dog button', e);
-  } else {
-    console.log('you must be a dino', e);
-  };
+const showPets = e => {
+  const allCards = document.getElementsByClassName('pet-container');
+  for (let i = 0; i < allCards.length; i++) {
+    console.log('e', e);
+    // const domPetType = e.target.parentNode.parentNode.childNodes[7].children[0].children[0].children[1].children[0];
+  }
 };
 
-// const clearPets = (e) => {
-//   const petType = e.target.innerHTML;
-//   if (petType === 'Clear Pets') {
-//     document.getElementById('pet-container').classList.remove('hide');
-//     };
-// };
-
 const addButtonEvents = () => {
+  const petButtons = document.getElementsByClassName('pet-button');
   for (let i = 0; i < petButtons.length; i++) {
     petButtons[i].addEventListener('click', showPets);
-  };
+  }
 };
 
 module.exports = addButtonEvents;
