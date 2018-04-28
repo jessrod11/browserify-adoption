@@ -20,7 +20,13 @@ const getPets = () => {
   return petsArray;
 };
 
+// const setPets = (petList) => {
+//   console.log('petArray in setPets', petList);
+//   const petArray = petList;
+// };
+
 module.exports = {
   initializer,
   getPets,
+  // setPets,
 };
