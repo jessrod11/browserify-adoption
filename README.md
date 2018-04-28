@@ -5,16 +5,16 @@
 Pet Adoption is an app that filters your pet based on the button(s) pushed. Browserify was used to compile the files in this project.
 
 ## Screenshot
-![Webpage]()
+![Webpage](https://raw.githubusercontent.com/jessrod11/browserify-adoption/master/screenshots/all-pets.png)
 
 ## Screenshot
-![Webpage]()
+![Webpage](https://github.com/jessrod11/browserify-adoption/blob/master/screenshots/cat.png)
 
 ## Screenshot
-![Webpage]()
+![Webpage](https://github.com/jessrod11/browserify-adoption/blob/master/screenshots/dino.png)
 
 ## Screenshot
-![Webpage]()
+![Webpage](https://github.com/jessrod11/browserify-adoption/blob/master/screenshots/dog.png)
 
 ## How to Run
 1. Clone down this repo and cd into project.
