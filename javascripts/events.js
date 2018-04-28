@@ -48,17 +48,10 @@ const showDinos = () => {
 };
 
 const showAll = () => {
-  for (let i = 0; i < dogs.length; i++) {
-    const allDogs = dogs[i];
-    allDogs.classList.remove('hide');
-  };
-  for (let j = 0; j < dinos.length; j++) {
-    const allDinos = dinos[j];
-    allDinos.classList.remove('hide');
-  };
-  for (let x = 0; x < cats.length; x++) {
-    const allCats = cats[x];
-    allCats.classList.remove('hide');
+  const allPets = document.getElementsByClassName('pet-container');
+  for (let i = 0; i < allPets.length; i++) {
+    const revealPets = allPets[i];
+    revealPets.classList.remove('hide');
   };
 };
 
